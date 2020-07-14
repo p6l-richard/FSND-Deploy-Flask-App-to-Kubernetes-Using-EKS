@@ -17,6 +17,7 @@ _mailinglist
 docs/_build/
 __pycache__
 .env_file
+p6l-udacity_credentials.csv
 
 # Coverage reports
 htmlcov/
