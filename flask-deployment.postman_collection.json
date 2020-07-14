@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "986a010b-6b83-40fe-a3a1-69ae0878750a",
+		"name": "Flask Deployment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get healthy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}",
+					"host": [
+						"{{host}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST creds",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"richard.poelderl@gmail.com\",\n    \"password\": \"superstrong\"\n}"
+				},
+				"url": {
+					"raw": "{{host}}/auth",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "See user token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "5e674e76-0b33-46a8-aa4e-b2c28752dd9f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "738eb533-02a5-499c-b480-031c756d2694",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "d43fbab6-c08b-4363-b5b4-3c6ae37fc14c",
+			"key": "host",
+			"value": "http://127.0.0.1:80/",
+			"type": "string"
+		},
+		{
+			"id": "9e54f584-22ef-4340-a3dd-dfc1b799e004",
+			"key": "deployment-token",
+			"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1OTU5MzkzMzIsIm5iZiI6MTU5NDcyOTczMiwiZW1haWwiOiJyaWNoYXJkLnBvZWxkZXJsQGdtYWlsLmNvbSJ9.fMT2Bp_6jPRzPlul2wSFpSR4pL-JkkFDx_Tj7TJbwVE",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
