@@ -18,6 +18,7 @@ docs/_build/
 __pycache__
 .env_file
 p6l-udacity_credentials.csv
+.original-yaml.yml
 
 # Coverage reports
 htmlcov/

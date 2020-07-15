@@ -1,7 +1,7 @@
 FROM  python:stretch
 
-COPY . /udacity-example
-WORKDIR /udacity-example
+COPY . /udacity-deployment
+WORKDIR /udacity-deployment
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
