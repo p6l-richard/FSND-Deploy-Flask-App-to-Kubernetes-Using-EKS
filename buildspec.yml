@@ -23,7 +23,6 @@ phases:
       - ls
       - pwd
       - chmod +x ./kubectl 
-      - ./kubectl ls
       # line above was originally: - chmod +x ./kubectl ./aws-iam-authenticator
       - echo `kubectl version`
       - export PATH=$PWD/:$PATH
