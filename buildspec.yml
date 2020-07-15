@@ -23,7 +23,8 @@ phases:
       - ls
       - pwd
       - ./kubectl ls
-      - chmod +x ./kubectl ./aws-iam-authenticator
+      - chmod +x ./kubectl 
+      # line above was originally: - chmod +x ./kubectl ./aws-iam-authenticator
       - echo `kubectl version`
       - export PATH=$PWD/:$PATH
       - python -m pip install --upgrade --force pip
